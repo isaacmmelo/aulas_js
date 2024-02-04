@@ -230,26 +230,28 @@ console.log(8 ** 2)
 | 1 |`*``/``%`|Multiplicação, divisão e resto|
 | 2 |`+``-`|Adição e subtração|
 | 3 |`=`|Atribuição|
-|:---:|:---:|:---:|
 
+```js
+/*
+Operações no mesmo nível (como + e -) são executadas na ordem em que são encontradas, da esquerda para a direita.
+*/
+let a = 1 * 2 + ((5 / 2) % 2)
+let a = 2 + ((5 / 2) % 2)
+let a = 2 + (2.5 % 2)
+let a = 2 + 0.5
+let a = 2.5
+console.log(a4)
+```
 
+## Operadores de comparação
 
+## Condicionais
+### If
+### Else
 
+## Array
 
-
-
-
-    - ordem execução
-  - Operadores de comparação
-  - Condicionais
-    - If
-    - Else
-  - Array
-  - Loops
-    - While
-    - For
-    - for of
-  - Funções
-  - DOM
-  - Objetos
-    
+## Estruturas de repetição
+### While
+### For
+### For of

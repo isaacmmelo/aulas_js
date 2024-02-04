@@ -244,9 +244,74 @@ console.log(a4)
 ```
 
 ## Operadores de comparação
+Você pode usar os operadores para comparar dois números ou duas strings. <br /> 
+Os operadores de comparação sempre retornam um booleano, um valor que é *verdadeiro* ou *falso*.<br />
+Estes são os operadores de comparação de desigualdade:
 
+- `<` significa "menor que"
+- `<=` significa "menor que ou igual a"
+- `>` significa "maior que"
+- `>=` significa "maior que ou igual a"
+
+```js
+/** Vejamos as comparações abaixo */
+let a = 2
+console.log(a <  1 )
+console.log(a <= 2 )
+console.log(a >  2 )
+console.log(a >= 2 )
+```
+
+Além desses, temos 2 operadores de igualdade. Eles aceitam dois valores e retornam um booleano:
+
+`===` verifica a igualdade
+`!==` verifica a desigualdade
+
+```js
+/** Vejamos as comparações abaixo */
+let a = 2
+console.log(a === 2)
+console.log(a !== 2)
+```
 ## Condicionais
+Estruturas condicionais são opções para fazer com que o programa siga um caminho ou outro, depende do resultado do teste.
+
 ### If
+A estrutura condicional *if* (se), é a mais simples.
+
+```js
+/** A estrutura abaixo sempre é executada, pois é o resultado é verdadeiro */
+if (true) {
+  //faça alguma coisa
+  console.log('Verdadeiro')
+}
+/** A estrutura abaixo nunca é executada, pois é o resultado é falso*/
+if (false) {
+  //faça alguma coisa
+  console.log('Falso')
+}
+```
+
+O *if* verifica a expressão que você passa para um valor verdadeiro ou falso.<br />
+Se você passar um número, isso sempre será avaliado como verdadeiro, a menos que seja 0.
+
+```js
+if (1) console.log('Um')
+if (0) console.log('Zero')
+```
+
+<br />Se você passar uma string, ela sempre será avaliada como verdadeira, a menos que seja uma string vazia.
+
+```js
+let a = "teste"
+let b
+if (a) console.log('A')
+if (b) console.log('B')
+```
+> **💡 DICA**  
+Você percebeu as chaves `{}`? Isso é chamado de bloco e é usado para agrupar uma lista de declarações diferentes. Um bloco pode ser colocado onde você pode ter uma única declaração. E se você tiver apenas uma declaração para executar após as condicionais, você pode omitir o bloco e escrever apenas a declaração, como fizemos nos exemplos anteriores, mas atenção, a recomendação é sempre utilizar os `{}`
+
+
 ### Else
 
 ## Array

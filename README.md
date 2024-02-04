@@ -4,15 +4,17 @@ Para as aulas de TADW do Instituto Federal Goiano
 ## Um pouco de conversa
 JavaScript, criado em 1995, foi a primeira linguagem de script nativamente suportada pelos navegadores, proporcionando uma vantagem única. Inicialmente usado para animações e Dynamic HTML, cresceu para atender às exigências da web. <br />
 Hoje, é a linguagem predominante na construção de Aplicações Web, sendo essencial para o desenvolvimento frontend. Além disso, transcendeu o ambiente do navegador com o advento do Node.js, desbravando o desenvolvimento no backend. <br />
-JavaScript agora impulsiona bancos de dados, aplicativos móveis, apps para TV e se tornou a linguagem mais popular globalmente, inicialmente emergindo de um papel modesto para se tornar essencial em diversos domínios de programação.
+JavaScript agora impulsiona bancos de dados, aplicativos móveis, apps para TV e se tornou a linguagem mais popular globalmente, inicialmente emergindo de um papel modesto para se tornar essencial em diversos domínios de programação. <br />
 
 > **💡 DICA**  
 Você pode utilizar o site [PlayCode JS](https://playcode.io/javascript) para rodar os códigos abaixo
 
+
 ## Curiosidades do Java Script
 ### Espaços em branco e quebra de linha
-O JavaScript não considera espaços em brancos nem quebras de linha como parte do código útil, portanto pode-se utilizar a vontade de espaçamento e deixar o código do jeito que fique mais fácil para você entender
-> **💡 DICA**
+O JavaScript não considera espaços em brancos nem quebras de linha como parte do código útil, portanto pode-se utilizar a vontade de espaçamento e deixar o código do jeito que fique mais fácil para você entender <br />
+
+> **💡 DICA**  
 Mantenha o código sempre identado e com um estilo bem definido, isso facilita o entendimento e a manutenção
 
 ### Case Sensitive
@@ -166,6 +168,12 @@ console.log(meuCarro2.modelo)
 ```
 
 ## Operadores matemáticos
+Operadores permitem que você pegue duas expressões simples e as combine para formar uma expressão mais complexa. <br />
+Um operador já apresentado foi apresentado ao falar sobre variáveis: o operador de atribuição `=`. <br />
+Vamos ver alguns outros operadores:
+```js
+
+```
 
 
   - Operadores matemáticos

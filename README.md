@@ -1,10 +1,15 @@
 # Uma introdução a JavaScript
 Para as aulas de TADW do Instituto Federal Goiano
 
+## Um pouco de conversa
+JavaScript, criado em 1995, foi a primeira linguagem de script nativamente suportada pelos navegadores, proporcionando uma vantagem única. Inicialmente usado para animações e Dynamic HTML, cresceu para atender às exigências da web. <br />
+Hoje, é a linguagem predominante na construção de Aplicações Web, sendo essencial para o desenvolvimento frontend. Além disso, transcendeu o ambiente do navegador com o advento do Node.js, desbravando o desenvolvimento no backend. <br />
+JavaScript agora impulsiona bancos de dados, aplicativos móveis, apps para TV e se tornou a linguagem mais popular globalmente, inicialmente emergindo de um papel modesto para se tornar essencial em diversos domínios de programação.
+
 > **💡 DICA**  
 Você pode utilizar o site [PlayCode JS](https://playcode.io/javascript) para rodar os códigos abaixo
 
-## Especificidades do Java Script
+## Curiosidades do Java Script
 ### Espaços em branco e quebra de linha
 O JavaScript não considera espaços em brancos nem quebras de linha como parte do código útil, portanto pode-se utilizar a vontade de espaçamento e deixar o código do jeito que fique mais fácil para você entender
 > **💡 DICA**
@@ -46,20 +51,123 @@ $teste = '😚'
 > **💡 DICA**  
 O JavaScript é compatível com unicode, então pode-se utilizar os emoticons padrões dessa codificação: [Lista dos Emojis Unicode](https://unicode.org/emoji/charts/full-emoji-list.html#1f642)
 
+### Comentários
+Para comentar códigos no java script podemos fazer de duas maneiras, em bloco ou por linha:
+```js
+// Para comentários em linhas utilizamos duas barras
+
+/*
+  Para comentários em bloco, utilizamos uma barra e um asterísticos para abrir o bloco e um asterístico barra para fechar o bloco
+*/
+```
+> **💡 DICA**  
+Comentários é umas das ferramentas mais poderosas da informática, use a abuse desse recurso 😉
+
+### Ponto e vírgula?
+Em algumas linguagens o ; (ponto e virgula) é obrigatório para delimitar o fechamento de uma linha.
+No JavaScript ele é opcional, isso mesmo, você coloca somente se quiser.
+```js
+console.log("Assim funciona")
+console.log("Assim também 😁");
+```
+
+## Variáveis
+As variáveis são valores assinados a um identificador, com essa referênciam, você pode usar esse valor a qualquer momento durante o programa.
+Para declarar uma variável, basta declararmos um identificador seguido de um sinal de igual (=) e o valor que desejamos:
+```js
+a = 0
+b = 1
+c = 2
+d = 3
+/*
+  Neste exemplo temos 04 variáveis declaradas
+  Cada uma com um valor e identificadores diferentes
+*/
+```
+A única regra é que a variável deve ser declarada antes do seu uso.
+```js
+console.log(a)
+const a = 0
+// Isso não irá funcionar, pois a declaração da variável está após o uso.
+```
+Temos 02 modificadores de variáveis que podemos utilizar no JavaScript, o const e o let
+### const
+Define uma referência constante a um valor. Isso significa que a referência não pode ser alterada. Não é possível atribuir um novo valor a ela.
+```js
+//Um exmeplo do que não podemos fazer é isto, o valor de a não será alterado
+//Um erro será declarado: TypeError: Assignment to constant variable
+const a = 0
+a = 1
+```
+### let
+Quando usamos let, podemos alterar o valor da variável. O let também não pe obrigatório ser colocado antes de variável, qualquer declaração feita sem o const e o let, será entendida como let.
+```js
+let a = 0
+a = 1
+```
+Um outro detalhe é que variáveis do tipo let podem ser inicializadas mais tarde
+```js
+let a
+a = 0
+```
+
+## Tipos de dados
+Variáveis em JavaScript não têm nenhum tipo associado. <br />
+Uma vez que você atribui um valor com algum tipo a uma variável, você pode posteriormente reatribuir a variável para armazenar um valor de qualquer outro tipo, sem nenhum problema.<br />
+```js
+let a
+a = 0
+a = "Texto"
+a = 0.5
+a = 2*2
+a = [1, 2, 3]
+```
+
+### Dados primitivos
+Além dos dados primitivos abaixo, podemos ter um tipo de dado indefinido, onde o compilador consegue encontrar a melhor solução para resolver este dado.
+```js
+let a
+a = 0 //Número
+a = "Texto" //String
+a = false //Boolean
+a = 😁 //Símbolos
+a = null
+```
+> **💡 DICA**  
+String é um tipo especial de dados em qualquer linguagem, com ela podemos fazer várias operações. Pega essa dica e se aprofunde no assunto
+```js
+const nome = 'Isaac'
+console.log(nome.length) //Mostra o tamanho da string
+
+const nome2 = 'Isaac'
+console.log('Meu nome é ' + nome2) //Concatena duas strings
+
+const variavel = 'teste'
+const string = `alguma coisa ${variavel}` //Concatena duas strings (crase)
+console.log(string)
+```
+
+### Objetos
+Qualquer valor que não seja de um tipo primitivo (uma string, um número, um booleano, null ou undefined) é um objeto. 
+Tipos de objetos têm propriedades e também possuem métodos que podem agir sobre essas propriedades.
+```js
+function Carro(marca, modelo) {
+ this.marca = marca
+ this.modelo = modelo
+}
+
+const meuCarro = new Carro('Ford', 'Fiesta')
+console.log(meuCarro.marca)
+console.log(meuCarro.modelo)
+
+const meuCarro2 = new Carro('Chevrolet', 'Onix')
+console.log(meuCarro2.marca)
+console.log(meuCarro2.modelo)
+```
+
+## Operadores matemáticos
 
 
-
-#Especifidades do JS
-  
-
-  - Identificador
-  - Comentário
-  - Ponto e vírgula opcional
-  - Variável
-    - const
-    - let
-  - Tipo
-  - Expressões
   - Operadores matemáticos
     - ordem execução
   - Operadores de comparação
@@ -67,7 +175,6 @@ O JavaScript é compatível com unicode, então pode-se utilizar os emoticons pa
     - If
     - Else
   - Array
-  - Strings
   - Loops
     - While
     - For

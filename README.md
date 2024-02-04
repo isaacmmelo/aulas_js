@@ -13,6 +13,11 @@ Você pode utilizar o site [PlayCode JS](https://playcode.io/javascript) para ro
 
 Este tutorial está dividido em 03 partes:
 
-## [Introdução a JavaScript](https://github.com/isaacmmelo/flutter_aulas/tree/main/dart_introdu%C3%A7%C3%A3o)
-## [JavScript Avançado](https://github.com/isaacmmelo/flutter_aulas/tree/main/dart_introdu%C3%A7%C3%A3o)
-## [Introdução a JQuery](https://github.com/isaacmmelo/flutter_aulas/tree/main/dart_introdu%C3%A7%C3%A3o)
+## [Introdução a JavaScript](https://github.com/isaacmmelo/aulas_js/tree/main/introdu%C3%A7%C3%A3o)
+Vamos entender como a linguagem funciona <br />
+
+## [JavScript Avançado](https://github.com/isaacmmelo/aulas_js/tree/main/avan%C3%A7ado)
+Vamos ver sobre estruturas avançadas, JSON, Elementos DOM e Objetos
+
+## [Introdução a JQuery](https://github.com/isaacmmelo/aulas_js/tree/main/jquery)
+Conheceremos o poder deste framework JS

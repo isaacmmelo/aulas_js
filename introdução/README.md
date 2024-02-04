@@ -313,6 +313,32 @@ Você percebeu as chaves `{}`? Isso é chamado de bloco e é usado para agrupar 
 
 
 ### Else
+Você pode fornecer uma segunda parte para a declaração `if`: `else`. Você anexa uma declaração que será executada se a condição do `if` for *falsa*.
+
+```js
+if (true) {
+  // faça algo
+  console.log('Verdadeiro')
+} else {
+  // faça algo diferente
+  console.log('Falso')
+}
+```
+
+Como o `else` aceita uma declaração, você pode aninhar outra declaração `if`/`else` dentro dele:
+
+```js
+if (a === true) {
+  // faça algo
+  console.log('Verdadeiro')
+} else if (b === true) {
+  // faça algo diferente
+  console.log('Verdadeiro 2')
+} else {
+  //fallback
+  console.log('Falso')
+}
+```
 
 ## Array
 

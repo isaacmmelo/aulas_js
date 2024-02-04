@@ -165,13 +165,80 @@ console.log(meuCarro2.modelo)
 ## Operadores matemáticos
 Operadores permitem que você pegue duas expressões simples e as combine para formar uma expressão mais complexa. <br />
 Um operador já apresentado foi apresentado ao falar sobre variáveis: o operador de atribuição `=`. <br />
-Vamos ver alguns outros operadores:
-```js
+Vamos ver alguns outros operadores: <br />
 
+Adição `+`
+```js
+/** Operador de adição + */
+const tres = 1 + 2
+const resultado = tres + 1
+console.log(resultado)
+
+/** Ele também serve para concatenar strings */
+const nome = "Isaac"
+const sobrenome = "Mendes"
+const nomeCompleto = nome + " " + sobrenome
+console.log(nomeCompleto)
+```
+Subtração `-`
+```js
+/** Operador de subtração - */
+const tres = 4 - 1
+const resultado = tres - 1
+console.log(resultado)
+```
+Divisão `/`
+```js
+/** Operador de divisão / */
+const result = 20 / 5 
+console.log(result)
+const result2 = 20 / 7
+console.log(result2)
+/** Se você dividir por 0, terá um valor infinito, o JS não retorna 0 */
+const result3 = 1/0
+console.log(result3)
+```
+Multiplicação `*`
+```js
+/** Retorna a multiplicaçãod de dois números */
+const result = 2 * 5 
+console.log(result)
+const result2 = 2 * -5
+console.log(result2)
+```
+Resto `%`
+```js
+/** Retorna o resto da divisão, muito útil para verificar divisores */
+const result = 20%5
+console.log(result)
+const result2 = 21%5
+console.log(result2)
+```
+Exponeciação `**`
+```js
+/** Eleva o primeiro número ao segundo */
+console.log(1 ** 2)
+console.log(2 ** 1)
+console.log(2 ** 2)
+console.log(2 ** 8)
+console.log(8 ** 2)
 ```
 
+## Ordem de execução da expressões
+|Ordem|Operador|Descrição|
+|:---:|:---:|:---:|
+| 1 |`*``/``%`|Multiplicação, divisão e resto|
+| 2 |`+``-`|Adição e subtração|
+| 3 |`=`|Atribuição|
+|:---:|:---:|:---:|
 
-  - Operadores matemáticos
+
+
+
+
+
+
+
     - ordem execução
   - Operadores de comparação
   - Condicionais

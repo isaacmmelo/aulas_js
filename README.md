@@ -17,7 +17,7 @@ Este tutorial está dividido em 03 partes:
 Vamos entender como a linguagem funciona <br />
 
 ## [JavScript Avançado](https://github.com/isaacmmelo/aulas_js/tree/main/avan%C3%A7ado)
-Vamos ver sobre estruturas avançadas, JSON, Elementos DOM e Objetos
+Vamos ver sobre estruturas avançadas, operações com vetores, JSON, Elementos DOM e Objetos
 
 ## [Introdução a JQuery](https://github.com/isaacmmelo/aulas_js/tree/main/jquery)
 Conheceremos o poder deste framework JS

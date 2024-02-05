@@ -340,7 +340,63 @@ if (a === true) {
 }
 ```
 
-## Array
+## Array ---FINALIZAR---
+Um array é uma coleção de elementos. Em JavaScript, os arrays não são um tipo próprio; eles são objetos. Podemos inicializar um array vazio de duas maneiras diferentes:
+
+javascript
+Copy code
+const a = []
+const a = Array()
+A primeira utiliza a sintaxe literal de array, enquanto a segunda usa a função embutida Array().
+
+É possível pré-preencher o array utilizando esta sintaxe:
+
+javascript
+Copy code
+const a = [1, 2, 3]
+const a = Array.of(1, 2, 3)
+Um array pode conter qualquer valor, até mesmo valores de tipos diferentes:
+
+javascript
+Copy code
+const a = [1, 'Flavio', ['a', 'b']]
+Dado que podemos adicionar um array a outro, podemos criar arrays multidimensionais, com aplicações úteis, como uma matriz:
+
+javascript
+Copy code
+const matriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+]
+matriz[0][0] //1
+matriz[2][0] //7
+Os elementos do array são acessados referenciando seu índice, que começa do zero:
+
+javascript
+Copy code
+a[0] //1
+a[1] //2
+a[2] //3
+É possível inicializar um novo array com um conjunto de valores usando esta sintaxe, que primeiro inicializa um array de 12 elementos e preenche cada elemento com o número 0:
+
+javascript
+Copy code
+Array(12).fill(0)
+A quantidade de elementos no array pode ser obtida verificando sua propriedade length:
+
+javascript
+Copy code
+const a = [1, 2, 3]
+a.length //3
+Observe que é possível definir o comprimento do array. Se atribuir um número maior do que a capacidade atual do array, nada acontece. Se atribuir um número menor, o array é cortado nessa posição:
+
+javascript
+Copy code
+const a = [1, 2, 3]
+a //[ 1, 2, 3 ]
+a.length = 2
+a //[ 1, 2 ]
 
 ## Estruturas de repetição
 ### While

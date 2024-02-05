@@ -340,7 +340,7 @@ if (a === true) {
 }
 ```
 
-## Array ---FINALIZAR---
+## Array
 Um array é uma coleção de elementos. Em JavaScript, os arrays *não são um tipo próprio*, eles são *objetos*.<br /> 
 Podemos inicializar um array vazio de duas maneiras diferentes:
 ```js
@@ -392,7 +392,7 @@ const a = [1, 2, 3]
 a.length = 2
 console.log(a)
 ```
-## Estruturas de repetição
+## Estruturas de repetição  ---FINALIZAR---
 ### While
 ### For
 ### For of

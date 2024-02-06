@@ -3,7 +3,7 @@ Para as aulas de TADW do Instituto Federal Goiano
 
 ## Subindo o docker
 
-`docker compose up -d`
+`docker compose up -d` <br />
 `docker exec tadw_tarefas docker-php-ext-install mysqli`
 
 ## Acesso

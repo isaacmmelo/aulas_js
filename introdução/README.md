@@ -341,24 +341,24 @@ if (a === true) {
 ```
 
 ## Array
-Um array é uma coleção de elementos. Em JavaScript, os arrays *não são um tipo próprio*, eles são *objetos*.<br /> 
-Podemos inicializar um array vazio de duas maneiras diferentes:
+Um `array` é uma coleção de elementos. Em JavaScript, os arrays *não são um tipo próprio*, eles são *objetos*.<br /> 
+Podemos inicializar um `array` vazio de duas maneiras diferentes:
 ```js
 const a = []
 const a = Array()
 /** A primeira utiliza a sintaxe literal de array, enquanto a segunda usa a função embutida Array().*/
 ```
-É possível pré-preencher o array utilizando esta sintaxe:
+É possível pré-preencher o `array` utilizando esta sintaxe:
 
 ```js
 const a = [1, 2, 3]
-const a = Array.of(1, 2, 3)
+const b = Array.of(1, 2, 3)
 ```
-Um array pode conter qualquer valor, até mesmo valores de tipos diferentes:
+Um `array` pode conter qualquer valor, até mesmo valores de tipos diferentes:
 ```js
 const a = [1, 'Flavio', ['a', 'b']]
 ```
-Dado que podemos adicionar um array a outro, podemos criar arrays multidimensionais, com aplicações úteis, como uma matriz:
+Dado que podemos adicionar um `array` a outro, podemos criar arrays multidimensionais, com aplicações úteis, como uma matriz:
 ```js
 const matriz = [
   [1, 2, 3],
@@ -375,24 +375,94 @@ console.log(a[0])
 console.log(a[1])
 console.log(a[2])
 ```
-É possível inicializar um novo array com um conjunto de valores usando esta sintaxe, que primeiro inicializa um array de 12 elementos e preenche cada elemento com o número 0:
+É possível inicializar um novo `array` com um conjunto de valores usando esta sintaxe, que primeiro inicializa um `array` de 12 elementos e preenche cada elemento com o número 0:
 ```js
 Array(12).fill(0)
 ```
-A quantidade de elementos no array pode ser obtida verificando sua propriedade length:
+A quantidade de elementos no `array` pode ser obtida verificando sua propriedade length:
 ```js
 const a = [1, 2, 3]
 console.log(a.length)
 ```
-É possível definir o comprimento do array.<br />
-Se atribuir um número maior do que a capacidade atual do array, nada acontece.<br />
-Se atribuir um número menor, o array é cortado nessa posição:
+É possível definir o comprimento do `array`.<br />
+Se atribuir um número maior do que a capacidade atual do `array`, nada acontece.<br />
+Se atribuir um número menor, o `array` é cortado nessa posição:
 ```js
 const a = [1, 2, 3]
 a.length = 2
 console.log(a)
 ```
-## Estruturas de repetição  ---FINALIZAR---
+## Estruturas de repetição
+Laços de repetição são uma das principais estruturas de controle do JavaScript. Com um laço, podemos automatizar e repetir indefinidamente um bloco de código, quantas vezes desejarmos. 
+
 ### While
+O `while` é a estrutura de repetição mais simples que o JavaScript nos fornece.<br /> Adicionamos uma condição após a palavra-chave `while` e fornecemos um bloco que é *executado até que* a condição seja avaliada como *verdadeira*.
+
+```js
+const lista = ['a', 'b', 'c'];
+let i = 0;
+
+while (i < lista.length) {
+  console.log(lista[i]); //Valor da lista
+  console.log(i); //Índice de repetição do While
+  i = i + 1;
+}
+```
+Você pode interromper um `while` usando a palavra-chave `break`, assim:
+
+```js
+const algoEVerdadeiro = true
+while (true) {
+  if (algoEVerdadeiro) break;
+}
+```
+Se decidir que no meio de um loop deseja pular a iteração atual, você pode passar para a próxima iteração usando `continue`:
+
+```js
+const lista = ['a', 'b', 'c'];
+let i = 0;
+
+while (i < lista.length) {
+  i = i + 1;
+  if (lista[i] === 'a') continue;
+  console.log(lista[i]); //Valor da lista
+  console.log(i); //Índice de repetição do While
+}
+```
+Muito semelhante ao while, temos a estrutura `do...while`. <br />
+Basicamente, é o mesmo que while, exceto que a condição é avaliada após a execução do bloco de código.<br />
+Isso significa que o bloco é sempre executado pelo menos uma vez.
+
+```js
+const lista = ['a', 'b', 'c'];
+let i = 0;
+
+do {
+  console.log(lista[i]); //Valor da lista
+  console.log(i); //Índice de repetição do While
+  i = i + 1;
+} while (i < lista.length);
+```
 ### For
+A segunda estrutura de repetição mais importante no JavaScript é o `for`.<br /> 
+Usamos a palavra-chave `for` e passamos um conjunto de 3 instruções: a inicialização, a condição e a parte de incremento.
+```js
+const lista = ['a', 'b', 'c'];
+
+for (let i = 0; i < lista.length; i++) {
+  console.log(lista[i]); //Valor da lista
+  console.log(i); //Índice de repetição do For
+}
+```
+> **💡 DICA** 
+Assim como no `while`, você pode interromper um `for` usando `break` e pode avançar rapidamente para a próxima iteração usando `continue`.
+
 ### For of
+Este loop é relativamente recente (introduzido em 2015) e é uma versão simplificada do for:
+
+```js
+const lista = ['a', 'b', 'c'];
+for (const valor of lista) {
+ console.log(valor); //Valor da lista
+}
+```

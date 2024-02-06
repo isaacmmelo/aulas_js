@@ -28,6 +28,9 @@ minúsculo
 MAIÚSCULO
 ```
 
+> **💡 DICA**  
+Você percebeu que para escrever algo no console do JavaScript utilizamos o comando `console.log()`? Vamos testar o seguinte comando: `console.log("Hello World")`
+
 ### Literal
 Literal é qualquer valor digitado no código fonte. A linguagem permite digitar qualquer valor durante a execução do código:
 ```js

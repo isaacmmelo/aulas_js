@@ -11,7 +11,7 @@ Você pode utilizar o site [PlayCode JS](https://playcode.io/javascript) para ro
 
 ## Como vai funcionar?
 
-Este tutorial está dividido em 03 partes:
+Este tutorial está dividido em 04 partes:
 
 ## [Introdução a JavaScript](https://github.com/isaacmmelo/aulas_js/tree/main/introdu%C3%A7%C3%A3o)
 Vamos entender como a linguagem funciona <br />
@@ -21,3 +21,6 @@ Vamos ver sobre estruturas avançadas, operações com vetores, JSON, Elementos 
 
 ## [Introdução a JQuery](https://github.com/isaacmmelo/aulas_js/tree/main/jquery)
 Conheceremos o poder deste framework JS
+
+## [Integração com PHP](https://github.com/isaacmmelo/aulas_js/tree/main/integracao_php)
+vamos juntar o que aprendemos ano passado com o JavaScript

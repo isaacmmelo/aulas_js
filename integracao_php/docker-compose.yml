@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  php:
+    container_name: "tadw_tarefas"
+    image: php:8.1.16-apache
+    volumes:
+      - ./codigo/:/var/www/html/
+    ports:
+      - 83:80
+
+  db:
+    image: mariadb:10.5
+    container_name: 'db_tadw_tarefas'
+    restart: always
+    environment:
+      - MARIADB_USER=root
+      - MARIADB_ROOT_PASSWORD=123
+
+  adminer:
+    image: adminer:4.8.1
+    container_name: "adminer_tadw_tarefas"
+    restart: always
+    ports:
+      - 812:8080

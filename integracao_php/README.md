@@ -8,4 +8,5 @@ Para as aulas de TADW do Instituto Federal Goiano
 
 ## Acesso
 Utilize a pasta de código para criar seu site <br />
-Utilize o endereço 
+Utilize o endereço http://127.0.0.1:812/ para administrar o banco de dados
+Utilize o endereço http://127.0.0.1:83/ para acessar o site
